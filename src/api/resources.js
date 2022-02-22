@@ -23,6 +23,7 @@ export const icons = {
 };
 
 export const storyImages = {
+	climate: require('../stories/images/story_climate.png'),
     solarsystem: touchGuiResource('images/stories/story_solarsystem.png'),
     jupitermoons: touchGuiResource('images/stories/story_jupitermoons.png'),
     earthweather: touchGuiResource('images/stories/story_earthweather.png'),
