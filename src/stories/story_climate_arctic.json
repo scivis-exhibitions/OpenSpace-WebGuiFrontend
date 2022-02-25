@@ -1,0 +1,19 @@
+{
+  "identifier":"climate_arctic",
+  "title": "Climate in the Arctic",
+  "storyinfo": "Explore the important Arctic region of our planet.",
+  "overviewlimit": 1.0e+8,
+  "focusbuttons": ["Earth"],
+  "timecontroller": true,
+  "datecontroller":  [],
+  "start": {
+    "planet": "Earth",
+    "date": "2010-01-12T15:00:00.00",
+    "location": {
+      "latitude": 40.758701,
+      "longitude": -111.876183,
+      "altitude": 20000000
+    }
+  },
+  "toggleboolproperties": []
+}

@@ -1,0 +1,40 @@
+{
+  "identifier":"climate_polarstern",
+  "title": "Mission of Polarstern in April 2020",
+  "storyinfo": "The boat that did the measurements",
+  "overviewlimit": 1.0e+8,
+  "focusbuttons": ["Earth"],
+  "timecontroller": true,
+  "datecontroller":  [
+    {
+      "info": "Start of mission",
+      "date": "2020-04-10T15:00:00.00",
+      "planet": "Earth",
+      "location": {
+        "latitude": 24.555059,
+        "longitude": -81.779984,
+        "altitude": 10000000
+      }
+    },
+    {
+      "info": "End of mission",
+      "date": "2020-04-20T15:00:00.00",
+      "planet": "Earth",
+      "location": {
+        "latitude": 24.555059,
+        "longitude": -81.779984,
+        "altitude": 10000000
+      }
+    }
+  ],
+  "start": {
+    "planet": "Earth",
+    "date": "2020-04-10T15:00:00.00",
+    "location": {
+      "latitude": 40.758701,
+      "longitude": -111.876183,
+      "altitude": 20000000
+    }
+  },
+  "toggleboolproperties": []
+}

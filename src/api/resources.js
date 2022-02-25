@@ -23,7 +23,9 @@ export const icons = {
 };
 
 export const storyImages = {
-	climate: require('../stories/images/story_climate.png'),
+    climate_global: require('../stories/images/story_climate_global.png'),
+    climate_arctic: require('../stories/images/story_climate_arctic.png'),
+    climate_polarstern: require('../stories/images/story_climate_polarstern.png'),
     solarsystem: touchGuiResource('images/stories/story_solarsystem.png'),
     jupitermoons: touchGuiResource('images/stories/story_jupitermoons.png'),
     earthweather: touchGuiResource('images/stories/story_earthweather.png'),
