@@ -3,7 +3,6 @@
   "title": "Climate in the Arctic",
   "storyinfo": "Explore the important Arctic region of our planet.",
   "overviewlimit": 1.0e+8,
-  "focusbuttons": ["Earth"],
   "timecontroller": true,
   "datecontroller":  [],
   "start": {
@@ -15,5 +14,14 @@
       "altitude": 20000000
     }
   },
-  "toggleboolproperties": []
+  "toggleboolproperties": [
+    {
+      "URI":"Ice_Snow",
+      "label":"Ice and Snow",
+      "isAction": true,
+      "actionEnabled":"ice_and_snow_true",
+      "actionDisabled":"ice_and_snow_false",
+      "defaultvalue": false
+    }
+  ]
 }

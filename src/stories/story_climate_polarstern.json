@@ -3,7 +3,6 @@
   "title": "Mission of Polarstern in April 2020",
   "storyinfo": "The boat that did the measurements",
   "overviewlimit": 1.0e+8,
-  "focusbuttons": ["Earth"],
   "timecontroller": true,
   "datecontroller":  [
     {
@@ -36,5 +35,40 @@
       "altitude": 20000000
     }
   },
-  "toggleboolproperties": []
+  "toggleboolproperties": [
+    {
+      "URI":"sites_temperature_columns",
+      "label":"Locations Temperatures",
+      "isAction": true,
+      "actionEnabled":"temperature_columns_true",
+      "actionDisabled":"temperature_columns_false",
+      "defaultvalue": false
+    },
+    {
+      "URI":"total_column_water",
+      "label":"Air Humidity etc",
+      "isAction": true,
+      "actionEnabled":"total_column_water_true",
+      "actionDisabled":"total_column_water_false",
+      "defaultvalue": false
+    },
+    {
+      "URI":"balloon_20200416",
+      "label":"Balloons 2020-04-16",
+      "group":"Ballons",
+      "isAction": true,
+      "actionEnabled":"balloon_20200416_true",
+      "actionDisabled":"balloon_20200416_false",
+      "defaultvalue": false
+    },
+    {
+      "URI":"balloon_20200419",
+      "label":"Balloons 2020-04-19",
+      "group":"Ballons",
+      "isAction": true,
+      "actionEnabled":"balloon_20200419_true",
+      "actionDisabled":"balloon_20200419_false",
+      "defaultvalue": false
+    }
+  ]
 }

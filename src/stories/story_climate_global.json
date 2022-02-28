@@ -3,7 +3,6 @@
   "title": "Climate on Earth",
   "storyinfo": "Earth is the third planet from the Sun and the only object in the Universe known to harbor life. According to radiometric dating and other sources of evidence, Earth formed over 4.5 billion years ago.",
   "overviewlimit": 1.0e+8,
-  "focusbuttons": ["Earth"],
   "timecontroller": true,
   "datecontroller":  [],
   "start": {
@@ -17,24 +16,22 @@
   },
   "toggleboolproperties": [
     {
-      "URI":"Scene.Earth.Renderable.Layers.ColorLayers.ERA5_Land_HighRes_Monthly_2M_Temperature_Temporal.Enabled",
+      "URI":"ERA5_Land_HighRes_Monthly_2M_Temperature",
       "label":"Land Temperature",
       "group":"ERA5",
+      "isAction": true,
+      "actionEnabled":"temperature_land_highres_true",
+      "actionDisabled":"temperature_land_highres_false",
       "defaultvalue": false
     },
     {
-      "URI":"Scene.Earth.Renderable.Layers.ColorLayers.ERA5_Land_Monthly_2M_Temperature_Temporal_mean_81-10vs10-20_each_year.Enabled",
+      "URI":"ERA5_Land_Monthly_2M_Temperature_Temporal_mean_81-10vs10-20_each_year",
       "label":"Land Temperature (Comparison against 1981-2010)",
       "group":"ERA5",
-      "defaultvalue": false
-    },
-    {
-      "URI":"Climate_Mode",
-      "label":"Climate Mode",
       "isAction": true,
-      "actionEnabled":"climate_mode_true",
-      "actionDisabled":"climate_mode_false",
-      "defaultvalue": true
+      "actionEnabled":"temperature_land_1981_2010_vs_2010_2020_mean_each_year_true",
+      "actionDisabled":"temperature_land_1981_2010_vs_2010_2020_mean_each_year_false",
+      "defaultvalue": false
     }
   ]
 }
