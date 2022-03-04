@@ -10,7 +10,7 @@ import Overlay from '../components/common/Overlay/Overlay';
 import Stack from '../components/common/Stack/Stack';
 import {
   setPropertyValue, startConnection, fetchData, addStoryTree, subscribeToProperty,
-  unsubscribeToProperty, addStoryInfo, resetStoryInfo,
+  unsubscribeToProperty, addStoryInfo, resetStoryInfo, triggerAction,
 } from '../api/Actions';
 import TouchBar from '../components/TouchBar/TouchBar';
 import DeveloperMenu from '../components/TouchBar/UtilitiesMenu/presentational/DeveloperMenu';
@@ -109,8 +109,8 @@ class OnTouchGui extends Component {
       });
     }
     // If the previous story toggled bool properties reset them to default value
-    if (this.props.story.toggleboolproperties) {
-      this.props.story.toggleboolproperties.forEach((property) => {
+    if (story.toggleboolproperties) {
+      story.toggleboolproperties.forEach((property) => {
         const defaultValue = property.defaultvalue ? true : false;
         if (property.isAction) {
           if (defaultValue) {
