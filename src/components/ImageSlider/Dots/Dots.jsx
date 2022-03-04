@@ -2,14 +2,15 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import Dot from './Dot';
 import styles from './Dots.scss';
+import stories from '../../../stories/stories.json';
 
 const Dots = ({ index, imagePaths, dotClick }) => {
   // Map the dots and the images
-  const dotsGroup = imagePaths.map((image, i) => {
+  const dotsGroup = stories.stories.map((story, i) => {
     const active = (i === index);
     return (
       <Dot
-        key={image}
+        key={imagePaths[i]}
         storyId={i}
         active={active}
         dotClick={dotClick}

@@ -49,7 +49,7 @@ class Slider extends Component {
 
   // Set the state to the next slide
   nextSlide() {
-    if (this.state.index !== this.state.imagePaths.length - 1) {
+    if (this.state.index !== this.state.stories.length - 1) {
       this.setState({ index: this.state.index + 1 });
     } else {
       this.setState({ index: 0 });
@@ -61,7 +61,7 @@ class Slider extends Component {
     if (this.state.index !== 0) {
       this.setState({ index: this.state.index - 1 });
     } else {
-      this.setState({ index: this.state.imagePaths.length - 1 });
+      this.setState({ index: this.state.stories.length - 1 });
     }
   }
 
