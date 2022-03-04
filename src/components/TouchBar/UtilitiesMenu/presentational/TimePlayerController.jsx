@@ -10,7 +10,7 @@ import SmallLabel from '../../../common/SmallLabel/SmallLabel';
 import styles from '../style/TimeController.scss';
 import buttonStyles from '../style/UtilitiesButtons.scss';
 
-const FastSpeed = 86400;
+const FastSpeed = 186400;
 const Speed = 3600;
 
 class TimePlayerController extends Component {
@@ -95,7 +95,7 @@ class TimePlayerController extends Component {
             role="button"
             tabIndex="0"
           >
-            <Icon icon="replay" className={styles.Icon} />
+            <Icon icon="replay" className={buttonStyles.Icon} />
             <SmallLabel>Time</SmallLabel>
           </div>
         </div>
@@ -107,31 +107,31 @@ class TimePlayerController extends Component {
             <Icon
               icon="fast_rewind"
               id={FastRewind}
-              className={`${styles.Icon} ${(deltaTime === -FastSpeed) && styles.active}`}
+              className={`${buttonStyles.Icon} ${(deltaTime === -FastSpeed) && styles.active}`}
               onClick={this.clickPlayer}
             />
             <Icon
               icon="fast_rewind"
               id={Rewind}
-              className={`${styles.Icon} ${(deltaTime === -Speed) && styles.active}`}
+              className={`${buttonStyles.Icon} ${(deltaTime === -Speed) && styles.active}`}
               onClick={this.clickPlayer}
             />
             <Icon
               icon={isPaused ? 'pause' : 'play_arrow'}
               id={Play}
-              className={`${styles.Icon} ${(deltaTime === 0 || deltaTime === 1) && styles.active}`}
+              className={`${buttonStyles.Icon} ${(deltaTime === 0 || deltaTime === 1) && styles.active}`}
               onClick={this.clickPlayer}
             />
             <Icon
               icon="fast_forward"
               id={Forward}
-              className={`${styles.Icon} ${(deltaTime === Speed) && styles.active}`}
+              className={`${buttonStyles.Icon} ${(deltaTime === Speed) && styles.active}`}
               onClick={this.clickPlayer}
             />
             <Icon
               icon="fast_forward"
               id={FastForward}
-              className={`${styles.Icon} ${(deltaTime === FastSpeed) && styles.active}`}
+              className={`${buttonStyles.Icon} ${(deltaTime === FastSpeed) && styles.active}`}
               onClick={this.clickPlayer}
             />
           </div>

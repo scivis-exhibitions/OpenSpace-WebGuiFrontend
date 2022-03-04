@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import InfoButton from './../presentational/InfoButton';
+import buttonStyle from '../style/UtilitiesButtons.scss';
 
 class InfoButtonController extends Component {
   constructor(props) {
@@ -14,7 +15,7 @@ class InfoButtonController extends Component {
 
   render() {
     return (
-      <div>
+      <div className={`${buttonStyle.UtilitiesButton}`}>
         {this.props.story.title &&
           <InfoButton
             storyTitle={this.props.story.title}

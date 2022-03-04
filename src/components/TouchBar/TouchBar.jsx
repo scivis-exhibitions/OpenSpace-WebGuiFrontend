@@ -6,12 +6,7 @@ import UtilitiesMenu from './UtilitiesMenu/UtilitiesMenu';
 
 const TouchBar = props => (
   <div className={styles.TouchBar}>
-    <section className={styles.Grid__Left}>
-      <UtilitiesMenu resetStory={props.resetStory}/>
-    </section>
-    <section className={styles.Grid__Right}>
-      <FocusMenu />
-    </section>
+    <UtilitiesMenu resetStory={props.resetStory}/>
     <Markers />
   </div>
 );

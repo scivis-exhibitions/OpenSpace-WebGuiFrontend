@@ -7,10 +7,14 @@ import styles from './style/UtilitiesMenu.scss';
 
 const UtilitiesMenu = (props) => (
   <div className={styles.UtilitiesMenu}>
-    <HomeButtonContainer resetStory={props.resetStory}/>
-    <HelpButton />
-    <InfoButtonController />
-    <Controllers />
+    <section className={styles.Grid__Left}>
+      <HomeButtonContainer resetStory={props.resetStory}/>
+      <HelpButton />
+      <InfoButtonController />
+    </section>
+    <section className={styles.Grid__Right}>
+        <Controllers />
+    </section>
   </div>
 );
 

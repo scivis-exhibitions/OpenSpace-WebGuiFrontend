@@ -9,6 +9,7 @@ import ScaleController from './../presentational/ScaleController';
 import SightsController from './../presentational/SightsController';
 import TimePlayerController from './../presentational/TimePlayerController';
 import ToggleBoolButtons from './../presentational/ToggleBoolButtons';
+import styles from '../style/UtilitiesMenu.scss';
 
 
 class Controllers extends Component {
@@ -72,16 +73,21 @@ class Controllers extends Component {
     const { story, scaleNodes } = this.props;
 
     return (
-      <div style={{ display: 'flex' }}>
+      <div className={`${styles.Controllers}`}>
+      <section className={styles.Grid__Left}>
         { (story && story.timecontroller) && (
           <TimePlayerController />
         )}
+      </section>
+      <section className={styles.Grid__Left}>
         {(story && story.datecontroller) && (
           <DateController
             dateList={story.datecontroller}
             onChangeSight={this.onChangeSight}
           />
         )}
+      </section>
+      <section className={styles.Grid__Right}>
         {(story && story.sightscontroller) && (
           <SightsController
             sightsList={story.sightscontroller}
@@ -99,6 +105,7 @@ class Controllers extends Component {
         {(story && story.toggleboolproperties) && (
           <ToggleBoolButtons />
         )}
+      </section>
       </div>
     );
   }
