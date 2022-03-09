@@ -10,7 +10,7 @@ import SmallLabel from '../../../common/SmallLabel/SmallLabel';
 import styles from '../style/TimeController.scss';
 import buttonStyles from '../style/UtilitiesButtons.scss';
 
-const FastSpeed = 186400;
+const FastSpeed = 864000;
 const Speed = 3600;
 
 class TimePlayerController extends Component {

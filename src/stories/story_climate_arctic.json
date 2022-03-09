@@ -14,7 +14,7 @@
       "altitude": 20000000
     }
   },
-  "toggleboolproperties": [
+  "toggleboolproperties": [  
     {
       "URI":"Ice_Snow",
       "label":"Ice and Snow",
