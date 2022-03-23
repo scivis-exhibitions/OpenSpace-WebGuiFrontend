@@ -17,10 +17,17 @@
   "toggleboolproperties": [  
     {
       "URI":"Ice_Snow",
-      "label":"Ice and Snow",
+      "label":"Ice and Snow (2010-2020)",
       "isAction": true,
       "actionEnabled":"ice_and_snow_true",
       "actionDisabled":"ice_and_snow_false",
+      "group": "IceSnow",
+      "defaultvalue": false
+    },
+    {
+      "URI":"Scene.Earth.Renderable.Layers.ColorLayers.AMSR2_GCOM_W1_Sea_Ice_Concentration_Temporal.Enabled",
+      "label":"Sea Ice Concentration (Real-time)",
+      "group": "IceSnow",
       "defaultvalue": false
     }
   ]

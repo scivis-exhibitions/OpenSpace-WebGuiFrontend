@@ -16,6 +16,15 @@
   },
   "toggleboolproperties": [
     {
+      "URI":"ESRI_VIIRS",
+      "label":"Earth Weather (Real-time)",
+      "group":"ERA5",
+      "isAction": true,
+      "actionEnabled":"esri_viirs_true",
+      "actionDisabled":"esri_viirs_false",
+      "defaultvalue": false
+    },
+    {
       "URI":"ERA5_Land_HighRes_Monthly_2M_Temperature",
       "label":"Land Temperature",
       "group":"ERA5",
