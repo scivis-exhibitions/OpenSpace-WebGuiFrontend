@@ -16,6 +16,14 @@
   },
   "toggleboolproperties": [  
     {
+      "URI":"ERA5_Sea_Monthly_2M_Temperature_Temporal_mean_81-10vs10-20_each_year",
+      "label":"Sea Temperature (Comparison against 1981-2010)",
+      "isAction": true,
+      "actionEnabled":"temperature_sea_1981_2010_vs_2010_2020_mean_each_year_true",
+      "actionDisabled":"temperature_sea_1981_2010_vs_2010_2020_mean_each_year_false",
+      "defaultvalue": false
+    },
+    {
       "URI":"Ice_Snow",
       "label":"Ice and Snow (2010-2020)",
       "isAction": true,

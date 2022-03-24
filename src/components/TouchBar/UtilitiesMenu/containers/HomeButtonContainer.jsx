@@ -3,12 +3,16 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { resetStoryTree } from '../../../../api/Actions';
 import HomeButton from '../presentational/HomeButton';
+import IdleTimer from 'react-idle-timer';
+import styles from '../style/UtilitiesButtons.scss';
 
 class HomeButtonContainer extends Component {
   constructor(props) {
     super(props);
 
     this.goToMenu = this.goToMenu.bind(this);
+    
+    this.idleTimer = null
   }
 
   goToMenu() {
@@ -18,7 +22,14 @@ class HomeButtonContainer extends Component {
 
   render() {
     return (
-      <HomeButton handleClick={this.goToMenu} />
+      <HomeButton handleClick={this.goToMenu}>
+            <IdleTimer
+          ref={ref => { this.idleTimer = ref }}
+          timeout={1000 * 60 * 10}
+          onIdle={this.goToMenu}
+          debounce={250}
+        />
+      </HomeButton>
     );
   }
 }

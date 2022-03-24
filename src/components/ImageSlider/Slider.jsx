@@ -7,11 +7,12 @@ import RightArrow from './Arrows/RightArrow';
 import Dots from './Dots/Dots';
 import Slide from './Slide';
 import styles from './Slider.scss';
+import IdleTimer from 'react-idle-timer'
 
 class Slider extends Component {
   constructor(props) {
     super(props);
-
+    
     const { startSlider } = this.props;
 
     let startIndex = stories.stories.findIndex(
@@ -41,6 +42,11 @@ class Slider extends Component {
     this.prevSlide = this.prevSlide.bind(this);
     this.handleDotClick = this.handleDotClick.bind(this);
     this.onChangeStory = this.onChangeStory.bind(this);
+    
+    this.idleTimer = null
+    this.handleOnAction = this.handleOnAction.bind(this)
+    this.handleOnActive = this.handleOnActive.bind(this)
+    this.handleOnIdle = this.handleOnIdle.bind(this)
   }
 
   onChangeStory(story) {
@@ -63,6 +69,17 @@ class Slider extends Component {
     } else {
       this.setState({ index: this.state.stories.length - 1 });
     }
+  }
+  
+  handleOnAction (event) {
+  }
+
+  handleOnActive (event) {
+  }
+
+  handleOnIdle (event) {
+    this.nextSlide();
+    this.idleTimer.reset();
   }
 
   // Handle the click of a dot
@@ -95,6 +112,14 @@ class Slider extends Component {
         />
         <RightArrow nextSlide={this.nextSlide} />
         <LeftArrow prevSlide={this.prevSlide} />
+        <IdleTimer
+          ref={ref => { this.idleTimer = ref }}
+          timeout={1000 * 20}
+          onActive={this.handleOnActive}
+          onIdle={this.handleOnIdle}
+          onAction={this.handleOnAction}
+          debounce={250}
+        />
       </div>
     );
   }
