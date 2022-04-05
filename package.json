@@ -29,7 +29,6 @@
     "d3-scale": "^3.3.0",
     "fsevents": "^2.3.2",
     "i18next": "^19.9.2",
-    "i18next-http-backend": "^1.4.0",
     "lodash": "^4.17.21",
     "openspace-api-js": "^0.1.5",
     "prop-types": "^15.7.2",

@@ -393,4 +393,4 @@ OnTouchGui.defaultProps = {
   connectionLost: null
 };
 
-export default withTranslation((WrappedOnTouchGui))
+export default withTranslation()(WrappedOnTouchGui)

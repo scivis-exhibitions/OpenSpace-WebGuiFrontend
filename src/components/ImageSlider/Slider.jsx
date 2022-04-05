@@ -8,6 +8,7 @@ import Dots from './Dots/Dots';
 import Slide from './Slide';
 import styles from './Slider.scss';
 import IdleTimer from 'react-idle-timer'
+import LanguageButton from '../common/LanguageButton/LanguageButton';
 
 class Slider extends Component {
   constructor(props) {
@@ -112,6 +113,7 @@ class Slider extends Component {
         />
         <RightArrow nextSlide={this.nextSlide} />
         <LeftArrow prevSlide={this.prevSlide} />
+        <LanguageButton />
         <IdleTimer
           ref={ref => { this.idleTimer = ref }}
           timeout={1000 * 20}

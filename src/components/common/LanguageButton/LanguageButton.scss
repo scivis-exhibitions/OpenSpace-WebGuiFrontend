@@ -1,0 +1,41 @@
+@import "../../../styles/all";
+
+.LanguageButton {
+    position: absolute;
+    top: 85%;
+    left: 1vw;
+    z-index: 999;
+    color: #fff;
+
+    padding: $button-padding;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    align-items: center;
+  
+    &:hover {
+        background: $ui-background-hover;
+        outline: 0;
+    }
+  
+    &.active {
+        background: transparent;
+        outline: 0;
+    }
+  }
+
+.LanguageButton:active {
+  background: transparent;
+  outline: 0;
+}
+
+$icon-size: 128px;
+
+.Icon {
+  font-size: $icon-size;
+}
+
+.iconImage {
+    height: $icon-size;
+  }

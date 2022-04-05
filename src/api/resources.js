@@ -19,7 +19,9 @@ export const icons = {
     Callisto: touchGuiResource('icons/solarsystem/callisto.png'),
     Europa: touchGuiResource('icons/solarsystem/europa.png'),
     Ganymede: touchGuiResource('icons/solarsystem/ganymede.png'),
-    Io: touchGuiResource('icons/solarsystem/io.png')
+    Io: touchGuiResource('icons/solarsystem/io.png'),
+    EngFlag: require('../icons/flagga-eng-no-text.png'),
+    SweFlag: require('../icons/flagga-sve-no-text.png')
 };
 
 export const storyImages = {

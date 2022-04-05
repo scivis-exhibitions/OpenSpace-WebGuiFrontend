@@ -1,34 +1,30 @@
-import i18n from 'i18next'
-import { initReactI18next } from 'react-i18next'
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+
+import translationEN from '../public/locales/en/translation.json';
+import translationSV from '../public/locales/sv/translation.json';
+
+// the translations
+const resources = {
+  en: {
+    translation: translationEN
+  },
+  sv: {
+    translation: translationSV
+  }
+};
 
 i18n
-  .use(initReactI18next)
+  .use(initReactI18next) // passes i18n down to react-i18next
   .init({
-    resources: {
-        en: {
-          translations: {
-            "Story_Climate_Global_Title": "Climate on Earth Shit",
-            "Story_Climate_Arctic_Title": "Climate in the Arctic",
-            "Story_Climate_Polarstern_Title": "Mission of Polarstern in April 2020"
-          }
-        },
-        sv: {
-          translations: {
-            "Story_Climate_Global_Title": "Jordens klimats",
-            "Story_Climate_Arctic_Title": "Arktis klimat",
-            "Story_Climate_Polarstern_Title": "Polarsterns uppdrag under April 2020"
-          }
-        }
-    },
+    resources,
+    lng: "en",
     fallbackLng: 'en',
     debug: true,
-    // have a common namespace used around the full app
-    ns: ["translations"],
-    defaultNS: "translations",
-    keySeparator: false, // we use content as keys
+    keySeparator: false, // we do not use keys in form messages.welcome
+
     interpolation: {
-      escapeValue: false, // not needed for react!!
-      formatSeparator: ","
+      escapeValue: false // react already safes from xss
     },
     react: {
       suspense: false

@@ -6,7 +6,6 @@ import NotFound from './views/NotFound';
 import OnScreenGui from './views/OnScreenGui';
 import OnTouchGui from './views/OnTouchGui';
 import RemoteGui from './views/RemoteGui';
-import { withTranslation } from 'react-i18next';
 
 const App = () => (
   <Router>
@@ -23,4 +22,4 @@ const App = () => (
   </Router>
 );
 
-export default withTranslation(App);
+export default App;
