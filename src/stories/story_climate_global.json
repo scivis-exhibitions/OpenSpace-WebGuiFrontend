@@ -1,6 +1,6 @@
 {
   "identifier":"climate_global",
-  "title": "Climate on Earth",
+  "title": "Story_Climate_Global_Title",
   "storyinfo": "Earth is the third planet from the Sun and the only object in the Universe known to harbor life. According to radiometric dating and other sources of evidence, Earth formed over 4.5 billion years ago.",
   "overviewlimit": 1.0e+8,
   "timecontroller": true,
@@ -29,7 +29,7 @@
       "label":"Land Temperature",
       "group":"ERA5",
       "isAction": true,
-      "actionEnabled":"temperature_land_highres_true",
+      "actionEnabled":"temperature_land_highres_true_eng",
       "actionDisabled":"temperature_land_highres_false",
       "defaultvalue": false
     },
@@ -38,7 +38,7 @@
       "label":"Land Temperature (Comparison against 1981-2010)",
       "group":"ERA5",
       "isAction": true,
-      "actionEnabled":"temperature_land_1981_2010_vs_2010_2020_mean_each_year_true",
+      "actionEnabled":"temperature_land_1981_2010_vs_2010_2020_mean_each_year_true_eng",
       "actionDisabled":"temperature_land_1981_2010_vs_2010_2020_mean_each_year_false",
       "defaultvalue": false
     }

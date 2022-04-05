@@ -28,12 +28,14 @@ import {
 import {
   isCompatible, formatVersion, RequiredSocketApiVersion, RequiredOpenSpaceVersion,
 } from '../api/Version';
+import { withTranslation } from 'react-i18next';
 
 const KEYCODE_D = 68;
 
 class OnTouchGui extends Component {
   constructor(props) {
     super(props);
+    
     this.checkedVersion = false;
     this.state = {
       developerMode: false,
@@ -255,7 +257,7 @@ class OnTouchGui extends Component {
           />
         )}
         <p className={styles.storyTitle}>
-          {story.title}
+          {this.props.t(story.title)}
         </p>
         {(currentStory === DefaultStory)
           ? <Slider startSlider={sliderStartStory} changeStory={this.setStory} />
@@ -391,4 +393,4 @@ OnTouchGui.defaultProps = {
   connectionLost: null
 };
 
-export default WrappedOnTouchGui;
+export default withTranslation((WrappedOnTouchGui))

@@ -27,6 +27,9 @@
   "dependencies": {
     "core-js": "^3.11.2",
     "d3-scale": "^3.3.0",
+    "fsevents": "^2.3.2",
+    "i18next": "^19.9.2",
+    "i18next-http-backend": "^1.4.0",
     "lodash": "^4.17.21",
     "openspace-api-js": "^0.1.5",
     "prop-types": "^15.7.2",
@@ -37,6 +40,7 @@
     "react-dom": "^16.14.0",
     "react-draggable": "^4.4.3",
     "react-hot-loader": "^4.13.0",
+    "react-i18next": "^11.16.2",
     "react-idle-timer": "^4.6.4",
     "react-input-autosize": "^2.2.2",
     "react-redux": "^7.2.4",
@@ -47,6 +51,9 @@
     "shallow-equal": "^1.2.1",
     "simple-keyboard-layouts": "^3.0.176",
     "svg-react-loader": "^0.4.6"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.3.2"
   },
   "devDependencies": {
     "@babel/core": "^7.14.0",

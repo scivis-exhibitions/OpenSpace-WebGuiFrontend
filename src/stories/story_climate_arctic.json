@@ -1,6 +1,6 @@
 {
   "identifier":"climate_arctic",
-  "title": "Climate in the Arctic",
+  "title": "Story_Climate_Arctic_Title",
   "storyinfo": "Explore the important Arctic region of our planet.",
   "overviewlimit": 1.0e+8,
   "timecontroller": true,
@@ -27,7 +27,7 @@
       "URI":"Ice_Snow",
       "label":"Ice and Snow (2010-2020)",
       "isAction": true,
-      "actionEnabled":"ice_and_snow_true",
+      "actionEnabled":"ice_and_snow_true_eng",
       "actionDisabled":"ice_and_snow_false",
       "group": "IceSnow",
       "defaultvalue": false
