@@ -1,18 +1,18 @@
 {
   "stories": [
       {
-          "title": "Explore Earth's Climate",
-          "info": "Explore the data visualization of our climate on our planet in the last years.",
+          "title": "Story_Climate_Global_Title",
+          "info": "Story_Climate_Global_Info",
           "identifier": "climate_global"
       },
       {
-          "title": "Explore Arctic's Climate",
-          "info": "Explore the important Arctic region of our planet",
+          "title": "Story_Climate_Arctic_Title",
+          "info": "Story_Climate_Arctic_Info",
           "identifier": "climate_arctic"
       },
       {
-          "title": "Mission of Polarstern in April 2020",
-          "info": "Follow us on a mission to explore the changing climate in the important Arctic region of our planet",
+          "title": "Story_Climate_Polarstern_Title",
+          "info": "Story_Climate_Polarstern_Info",
           "identifier": "climate_polarstern"
       }
     ]

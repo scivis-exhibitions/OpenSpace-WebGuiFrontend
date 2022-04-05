@@ -1,8 +1,8 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
-import translationEN from '../public/locales/en/translation.json';
-import translationSV from '../public/locales/sv/translation.json';
+import translationEN from '../public/translations/en.json';
+import translationSV from '../public/translations/sv.json';
 
 // the translations
 const resources = {
@@ -18,9 +18,9 @@ i18n
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
     resources,
-    lng: "en",
-    fallbackLng: 'en',
-    debug: true,
+    lng: "sv",
+    fallbackLng: 'sv',
+    debug: false,
     keySeparator: false, // we do not use keys in form messages.welcome
 
     interpolation: {

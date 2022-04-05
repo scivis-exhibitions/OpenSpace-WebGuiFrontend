@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import CenteredLabel from '../common/CenteredLabel/CenteredLabel';
 import styles from './Slide.scss';
 import StoryButton from './StoryButton';
+import { withTranslation } from 'react-i18next';
 
 class Slide extends Component {
   constructor(props) {
@@ -22,11 +23,12 @@ class Slide extends Component {
       <div className={styles.Container}>
         <img src={image} className={styles.Slide} alt={'Story'} />
         <div className={styles.StoryInfo}>
-          <CenteredLabel className={styles.StoryName}>{storyInfo.title}</CenteredLabel>
-          <CenteredLabel className={styles.Description}>{storyInfo.info}</CenteredLabel>
+          <CenteredLabel className={styles.StoryName}>{this.props.t(storyInfo.title)}</CenteredLabel>
+          <CenteredLabel className={styles.Description}>{this.props.t(storyInfo.info)}</CenteredLabel>
           <StoryButton
             pickStory={this.handleStory}
             storyIdentifier={storyInfo.identifier}
+            buttonText={this.props.t("Story_Button")}
           />
         </div>
       </div>
@@ -43,4 +45,4 @@ Slide.propTypes = {
   }).isRequired,
 };
 
-export default Slide;
+export default withTranslation()(Slide);

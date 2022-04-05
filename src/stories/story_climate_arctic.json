@@ -1,7 +1,7 @@
 {
   "identifier":"climate_arctic",
-  "title": "Story_Climate_Arctic_Title",
-  "storyinfo": "Explore the important Arctic region of our planet.",
+  "title": "Story_Climate_Arctic_StoryTitle",
+  "storyinfo": "Story_Climate_Arctic_StoryInfo",
   "overviewlimit": 1.0e+8,
   "timecontroller": true,
   "datecontroller":  [],

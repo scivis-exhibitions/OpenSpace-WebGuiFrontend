@@ -9,6 +9,7 @@ import Slide from './Slide';
 import styles from './Slider.scss';
 import IdleTimer from 'react-idle-timer'
 import LanguageButton from '../common/LanguageButton/LanguageButton';
+import { withTranslation } from 'react-i18next';
 
 class Slider extends Component {
   constructor(props) {
@@ -131,4 +132,4 @@ Slider.propTypes = {
   changeStory: PropTypes.func.isRequired,
 };
 
-export default Slider;
+export default withTranslation()(Slider);
