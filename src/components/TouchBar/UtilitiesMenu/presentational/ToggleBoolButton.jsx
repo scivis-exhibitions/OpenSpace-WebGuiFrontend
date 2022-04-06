@@ -5,6 +5,7 @@ import propertyDispatcher from '../../../../api/propertyDispatcher';
 import { triggerAction } from '../../../../api/Actions';
 import SmallLabel from '../../../common/SmallLabel/SmallLabel';
 import styles from '../style/UtilitiesButtons.scss';
+import i18next from "i18next";
 
 class ToggleBoolButton extends Component {
   constructor(props) {
@@ -13,11 +14,15 @@ class ToggleBoolButton extends Component {
     this.state = {
       checked: this.props.property.isAction ? this.props.property.defaultvalue : this.props.propertyNode.value,
     };
-
+    
     this.disableIfChecked = this.disableIfChecked.bind(this);
     this.toggleChecked = this.toggleChecked.bind(this);
     this.handleOnClick = this.handleOnClick.bind(this);
+    this.updateMultiLang = this.updateMultiLang.bind(this);
+    this.languageChanged = this.languageChanged.bind(this);
+    i18next.on('languageChanged', this.languageChanged);
   }
+
 
   componentDidMount() {
     const { boolPropertyDispatcher, property } = this.props;
@@ -45,13 +50,39 @@ class ToggleBoolButton extends Component {
       this.setState({ checked: false });
     }
   }
+  
+  languageChanged(lng) {
+    this.props.languageUpdate(this.props);
+    /*const { boolPropertyDispatcher, property } = this.props;
+    const { checked } = this.state;
+    if (checked) {
+        if(property.isMultiLang) {
+            this.props.triggerActionDispatcher(property.actionEnabled + '_' + i18next.language);
+        }
+    }*/
+  }
+  
+  updateMultiLang() {
+    const { boolPropertyDispatcher, property } = this.props;
+    const { checked } = this.state;
+    if (checked) {
+        if(property.isMultiLang) {
+            this.props.triggerActionDispatcher(property.actionEnabled + '_' + i18next.language);
+        }
+    }  
+  }
 
   toggleChecked() {
     const { property } = this.props;
     const { checked } = this.state;
     if (property.isAction) {
       if (!checked) {
-        this.props.triggerActionDispatcher(property.actionEnabled);
+        if (property.isMultiLang) {
+            this.props.triggerActionDispatcher(property.actionEnabled + '_' + i18next.language);
+        }
+        else {
+            this.props.triggerActionDispatcher(property.actionEnabled);
+        }
         this.setState({ checked: true });
       } else {
         this.props.triggerActionDispatcher(property.actionDisabled);
@@ -85,7 +116,7 @@ class ToggleBoolButton extends Component {
         id={property.URI}
       >
         <SmallLabel id={property.URI} style={{ textAlign: 'center' }}>
-          {property.label}
+          {i18next.t('toggleboolproperties.' + property.URI + '.label')}
         </SmallLabel>
       </div>
     );

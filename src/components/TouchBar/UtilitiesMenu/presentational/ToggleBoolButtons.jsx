@@ -1,19 +1,37 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import ToggleBoolButton from './ToggleBoolButton';
+import i18next from "i18next";
+import { withTranslation } from 'react-i18next';
 
 class ToggleBoolButtons extends Component {
   constructor(props) {
     super(props);
     this.handleGroup = this.handleGroup.bind(this);
     this.toggleButtons = [];
+    
+    this.languageUpdate = this.languageUpdate.bind(this);
+    //i18next.on('languageChanged', this.languageChanged);
   }
-
+ 
   handleGroup(clickedProperty) {
     const { properties } = this.props;
     properties.map((p, i) => {
       if (clickedProperty.property.URI !== p.URI && clickedProperty.property.group === p.group) {
-        this.toggleButtons[p.URI].disableIfChecked();
+        if(this.toggleButtons[p.URI] !== null) {
+            this.toggleButtons[p.URI].disableIfChecked();
+        }
+      }
+    });
+  }
+  
+  languageUpdate(thisProperty) {
+    const { properties } = this.props;
+    properties.map((p, i) => {
+      if (thisProperty.property.URI !== p.URI) {
+          if(this.toggleButtons[p.URI] !== null) {
+            this.toggleButtons[p.URI].updateMultiLang();
+          }
       }
     });
   }
@@ -27,6 +45,7 @@ class ToggleBoolButtons extends Component {
           key={property.URI}
           property={property}
           handleGroup={this.handleGroup}
+          languageUpdate={this.languageUpdate}
         />
       ))
     );
@@ -52,4 +71,4 @@ ToggleBoolButtons = connect(
   mapStateToProps,
 )(ToggleBoolButtons);
 
-export default ToggleBoolButtons;
+export default withTranslation()(ToggleBoolButtons);

@@ -15,28 +15,28 @@
   "toggleboolproperties": [
     {
       "URI":"ESRI_VIIRS",
-      "label":"Earth Weather (Real-time)",
       "group":"ERA5",
       "isAction": true,
+      "isMultiLang": true,
       "actionEnabled":"esri_viirs_true",
       "actionDisabled":"esri_viirs_false",
       "defaultvalue": false
     },
     {
       "URI":"ERA5_Land_HighRes_Monthly_2M_Temperature",
-      "label":"Land Temperature",
       "group":"ERA5",
       "isAction": true,
-      "actionEnabled":"temperature_land_highres_true_eng",
+      "isMultiLang": true,
+      "actionEnabled":"temperature_land_highres_true",
       "actionDisabled":"temperature_land_highres_false",
       "defaultvalue": false
     },
     {
       "URI":"ERA5_Land_Monthly_2M_Temperature_Temporal_mean_81-10vs10-20_each_year",
-      "label":"Land Temperature (Comparison against 1981-2010)",
       "group":"ERA5",
       "isAction": true,
-      "actionEnabled":"temperature_land_1981_2010_vs_2010_2020_mean_each_year_true_eng",
+      "isMultiLang": true,
+      "actionEnabled":"temperature_land_1981_2010_vs_2010_2020_mean_each_year_true",
       "actionDisabled":"temperature_land_1981_2010_vs_2010_2020_mean_each_year_false",
       "defaultvalue": false
     }

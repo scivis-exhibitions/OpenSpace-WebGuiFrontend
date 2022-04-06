@@ -10,30 +10,62 @@
     "slide": {
         "button": "Tryck här för att utforska"
     },
+    "toggleboolproperties": {
+        "ESRI_VIIRS": {
+            "label": "Jordens väder (Realtid)"
+        },
+        "ERA5_Land_HighRes_Monthly_2M_Temperature": {
+            "label": "Markytans temperatur"
+        },
+        "ERA5_Land_Monthly_2M_Temperature_Temporal_mean_81-10vs10-20_each_year": {
+            "label": "Markytans temperatur (Jämförelse mot 1981-2010)"
+        },
+        "ERA5_Sea_Monthly_2M_Temperature_Temporal_mean_81-10vs10-20_each_year": {
+            "label": "Havets yttemperatur (Jämförelse mot 1981-2010)"
+        },
+        "Ice_Snow": {
+            "label": "Is och Snö (2010-2020)"
+        },
+        "Scene":{"Earth":{"Renderable":{"Layers":{"ColorLayers":{"AMSR2_GCOM_W1_Sea_Ice_Concentration_Temporal":{"Enabled": {
+            "label": "Koncentration av havsis (Realtid)"
+        }}}}}}},
+        "sites_temperature_columns": {
+            "label": "Platsbaserad temperaturmätningar"
+        },
+        "total_column_water": {
+            "label": "Luftfuktighet"
+        },
+        "balloon_20200416": {
+            "label": "Ballonger 2020-04-16"
+        },
+        "balloon_20200419": {
+            "label": "Ballonger 2020-04-19"
+        }
+    },
     "stories": {
-          "climate_global": {
-              "title": "Jordens klimat",
-              "info": "Jorden är den tredje planeten från solen och det enda objektet i universum som är känt för att hysa liv. Enligt radiometrisk datering och andra beviskällor bildades jorden för över 4,5 miljarder år sedan.",
-              "slide": {
+        "climate_global": {
+            "title": "Jordens klimat",
+            "info": "Jorden är den tredje planeten från solen och det enda objektet i universum som är känt för att hysa liv. Enligt radiometrisk datering och andra beviskällor bildades jorden för över 4,5 miljarder år sedan.",
+            "slide": {
                 "title": "Utforska jordens klimat",
                 "info": "Utforska datavisualiseringen av vårt klimat på vår planet under de senaste åren."
-              }
-          },
-          "climate_arctic": {
-              "title": "Arktis klimat",
-              "info": "Utforska den viktiga arktiska regionen på vår planet.",
-              "slide": {
+            }
+      },
+      "climate_arctic": {
+            "title": "Arktis klimat",
+            "info": "Utforska den viktiga arktiska regionen på vår planet.",
+            "slide": {
                 "title": "Utforska klimatet i Arktis",
                 "info": "Denna region är mycket viktig för vår planet."
-              }
-          },
-          "climate_polarstern": {
-              "title": "Polarsterns uppdrag under April 2020",
-              "info": "Båten som gjorde mätningarna.",
-              "slide": {
+            }
+      },
+      "climate_polarstern": {
+            "title": "Polarsterns uppdrag under April 2020",
+            "info": "Båten som gjorde mätningarna.",
+            "slide": {
                 "title": "Polarsterns uppdrag under April 2020",
                 "info": "Följ med oss på ett uppdrag för att utforska det föränderliga klimatet i den viktiga arktiska regionen på vår planet."
-              }
           }
+      }
     }
 }

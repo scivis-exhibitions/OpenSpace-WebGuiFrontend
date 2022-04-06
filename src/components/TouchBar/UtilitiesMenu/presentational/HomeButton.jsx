@@ -19,7 +19,7 @@ const HomeButton = props => (
 
 HomeButton.propTypes = {
   handleClick: PropTypes.func.isRequired,
-  uttonText: PropTypes.string.isRequired,
+  buttonText: PropTypes.string.isRequired,
 };
 
 export default HomeButton;

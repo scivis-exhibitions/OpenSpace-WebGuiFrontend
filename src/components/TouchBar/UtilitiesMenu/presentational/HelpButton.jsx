@@ -9,6 +9,10 @@ const HelpButton = props => {
   const [showInstructions, setShowInstructions] = useState(false);
 
   useEffect(() => {
+      setShowInstructions(true);
+  }, []);
+
+  useEffect(() => {
     if(showInstructions){
       const timeout = setTimeout(() => {
           setShowInstructions(false)
@@ -16,7 +20,7 @@ const HelpButton = props => {
       return () => { clearTimeout(timeout); };
     }
   }, [showInstructions]);
-
+ 
   return (
     <div
       className={`${styles.UtilitiesButton}

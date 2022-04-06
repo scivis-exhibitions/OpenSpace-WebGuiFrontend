@@ -15,24 +15,24 @@
   "toggleboolproperties": [  
     {
       "URI":"ERA5_Sea_Monthly_2M_Temperature_Temporal_mean_81-10vs10-20_each_year",
-      "label":"Sea Temperature (Comparison against 1981-2010)",
       "isAction": true,
+      "isMultiLang": true,
+      "group": "IceSnow",
       "actionEnabled":"temperature_sea_1981_2010_vs_2010_2020_mean_each_year_true",
       "actionDisabled":"temperature_sea_1981_2010_vs_2010_2020_mean_each_year_false",
       "defaultvalue": false
     },
     {
       "URI":"Ice_Snow",
-      "label":"Ice and Snow (2010-2020)",
       "isAction": true,
-      "actionEnabled":"ice_and_snow_true_eng",
+      "isMultiLang": true,
+      "actionEnabled":"ice_and_snow_true",
       "actionDisabled":"ice_and_snow_false",
       "group": "IceSnow",
       "defaultvalue": false
     },
     {
       "URI":"Scene.Earth.Renderable.Layers.ColorLayers.AMSR2_GCOM_W1_Sea_Ice_Concentration_Temporal.Enabled",
-      "label":"Sea Ice Concentration (Real-time)",
       "group": "IceSnow",
       "defaultvalue": false
     }

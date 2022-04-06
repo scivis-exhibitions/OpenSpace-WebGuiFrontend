@@ -10,30 +10,62 @@
     "slide": {
         "button": "Tap here to explore"
     },
+    "toggleboolproperties": {
+        "ESRI_VIIRS": {
+            "label": "Earth Weather (Real-time)"
+        },
+        "ERA5_Land_HighRes_Monthly_2M_Temperature": {
+            "label": "Land Surface Temperature"
+        },
+        "ERA5_Land_Monthly_2M_Temperature_Temporal_mean_81-10vs10-20_each_year": {
+            "label": "Land Surface Temperature (Comparison against 1981-2010)"
+        },
+        "ERA5_Sea_Monthly_2M_Temperature_Temporal_mean_81-10vs10-20_each_year": {
+            "label": "Sea Surface Temperature (Comparison against 1981-2010)"
+        },
+        "Ice_Snow": {
+            "label": "Ice and Snow (2010-2020)"
+        },
+        "Scene":{"Earth":{"Renderable":{"Layers":{"ColorLayers":{"AMSR2_GCOM_W1_Sea_Ice_Concentration_Temporal":{"Enabled": {
+            "label": "Sea Ice Concentration (Real-time)"
+        }}}}}}},
+        "sites_temperature_columns": {
+            "label": "Location-based Temperatures"
+        },
+        "total_column_water": {
+            "label": "Air Humidity"
+        },
+        "balloon_20200416": {
+            "label": "Balloons 2020-04-16"
+        },
+        "balloon_20200419": {
+            "label": "Balloons 2020-04-19"
+        }
+    },
     "stories": {
-          "climate_global": {
-              "title": "Climate on Earth",
-              "info": "Earth is the third planet from the Sun and the only object in the Universe known to harbor life. According to radiometric dating and other sources of evidence, Earth formed over 4.5 billion years ago.",
-              "slide": {
+        "climate_global": {
+            "title": "Climate on Earth",
+            "info": "Earth is the third planet from the Sun and the only object in the Universe known to harbor life. According to radiometric dating and other sources of evidence, Earth formed over 4.5 billion years ago.",
+            "slide": {
                 "title": "Explore Earth's Climate",
                 "info": "Explore the data visualization of our climate on our planet in the last years."
-              }
-          },
-          "climate_arctic": {
-              "title": "Climate in the Arctic",
-              "info": "Explore the important Arctic region of our planet.",
-              "slide": {
+            }
+        },
+        "climate_arctic": {
+            "title": "Climate in the Arctic",
+            "info": "Explore the important Arctic region of our planet.",
+            "slide": {
                 "title": "Explore Arctic's Climate",
                 "info": "This region is very important for our planet."
-              }
-          },
-          "climate_polarstern": {
-              "title": "Mission of Polarstern in April 2020",
-              "info": "The boat that did the measurements.",
-              "slide": {
+            }
+        },
+        "climate_polarstern": {
+            "title": "Mission of Polarstern in April 2020",
+            "info": "The boat that did the measurements.",
+            "slide": {
                 "title": "Mission of Polarstern in April 2020",
                 "info": "Follow us on a mission to explore the changing climate in the important Arctic region of our planet."
-              }
-          }
+            }
+        }
     }
 }

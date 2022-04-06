@@ -36,37 +36,37 @@
   "toggleboolproperties": [
     {
       "URI":"sites_temperature_columns",
-      "label":"Locations Temperatures",
       "isAction": true,
+      "isMultiLang": true,
       "group":"Data",
-      "actionEnabled":"temperature_columns_true_eng",
+      "actionEnabled":"temperature_columns_true",
       "actionDisabled":"temperature_columns_false",
       "defaultvalue": false
     },
     {
       "URI":"total_column_water",
-      "label":"Air Humidity etc",
       "isAction": true,
+      "isMultiLang": true,
       "group":"Data",
-      "actionEnabled":"total_column_water_true_eng",
+      "actionEnabled":"total_column_water_true",
       "actionDisabled":"total_column_water_false",
       "defaultvalue": false
     },
     {
       "URI":"balloon_20200416",
-      "label":"Balloons 2020-04-16",
       "group":"Balloons",
       "isAction": true,
-      "actionEnabled":"balloon_20200416_true_eng",
+      "isMultiLang": true,
+      "actionEnabled":"balloon_20200416_true",
       "actionDisabled":"balloon_20200416_false",
       "defaultvalue": false
     },
     {
       "URI":"balloon_20200419",
-      "label":"Balloons 2020-04-19",
       "group":"Balloons",
       "isAction": true,
-      "actionEnabled":"balloon_20200419_true_eng",
+      "isMultiLang": true,
+      "actionEnabled":"balloon_20200419_true",
       "actionDisabled":"balloon_20200419_false",
       "defaultvalue": false
     }
