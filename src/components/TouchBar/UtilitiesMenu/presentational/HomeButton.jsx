@@ -13,12 +13,13 @@ const HomeButton = props => (
     tabIndex="0"
   >
     <Icon icon="home" className={styles.Icon} />
-    <SmallLabel>{i18next.t('touchbar.home')}</SmallLabel>
+    <SmallLabel>{props.buttonText}</SmallLabel>
   </div>
 );
 
 HomeButton.propTypes = {
   handleClick: PropTypes.func.isRequired,
+  uttonText: PropTypes.string.isRequired,
 };
 
 export default HomeButton;

@@ -5,6 +5,7 @@ import { resetStoryTree } from '../../../../api/Actions';
 import HomeButton from '../presentational/HomeButton';
 import IdleTimer from 'react-idle-timer';
 import styles from '../style/UtilitiesButtons.scss';
+import { withTranslation } from 'react-i18next';
 
 class HomeButtonContainer extends Component {
   constructor(props) {
@@ -22,7 +23,7 @@ class HomeButtonContainer extends Component {
 
   render() {
     return (
-      <HomeButton handleClick={this.goToMenu}>
+      <HomeButton handleClick={this.goToMenu} buttonText={this.props.t('touchbar.home')}>
             <IdleTimer
           ref={ref => { this.idleTimer = ref }}
           timeout={1000 * 60 * 10}
@@ -54,4 +55,4 @@ HomeButtonContainer.defaultProps = {
   ResetStoryTree: () => {},
 };
 
-export default HomeButtonContainer;
+export default withTranslation()(HomeButtonContainer);
