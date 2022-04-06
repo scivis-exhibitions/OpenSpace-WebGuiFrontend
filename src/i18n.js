@@ -1,16 +1,16 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
-import translationEN from '../public/translations/en.json';
-import translationSV from '../public/translations/sv.json';
+import translationENG from '../public/translations/eng.json';
+import translationSWE from '../public/translations/swe.json';
 
 // the translations
 const resources = {
-  en: {
-    translation: translationEN
+  eng: {
+    translation: translationENG
   },
-  sv: {
-    translation: translationSV
+  swe: {
+    translation: translationSWE
   }
 };
 
@@ -18,11 +18,10 @@ i18n
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
     resources,
-    lng: "sv",
-    fallbackLng: 'sv',
+    lng: "swe",
+    fallbackLng: 'swe',
     debug: false,
-    keySeparator: false, // we do not use keys in form messages.welcome
-
+    returnObjects: true,
     interpolation: {
       escapeValue: false // react already safes from xss
     },

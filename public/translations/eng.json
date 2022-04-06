@@ -1,0 +1,39 @@
+{
+    "touchbar": {
+        "home": "Home",
+        "help": "Help",
+        "time": "Time",
+        "info": "Info",
+        "help_image": "instructionImageENG",
+        "select_event": "Select event"
+    },
+    "slide": {
+        "button": "Tap here to explore"
+    },
+    "stories": {
+          "climate_global": {
+              "title": "Climate on Earth",
+              "info": "Earth is the third planet from the Sun and the only object in the Universe known to harbor life. According to radiometric dating and other sources of evidence, Earth formed over 4.5 billion years ago.",
+              "slide": {
+                "title": "Explore Earth's Climate",
+                "info": "Explore the data visualization of our climate on our planet in the last years."
+              }
+          },
+          "climate_arctic": {
+              "title": "Climate in the Arctic",
+              "info": "Explore the important Arctic region of our planet.",
+              "slide": {
+                "title": "Explore Arctic's Climate",
+                "info": "This region is very important for our planet."
+              }
+          },
+          "climate_polarstern": {
+              "title": "Mission of Polarstern in April 2020",
+              "info": "The boat that did the measurements.",
+              "slide": {
+                "title": "Mission of Polarstern in April 2020",
+                "info": "Follow us on a mission to explore the changing climate in the important Arctic region of our planet."
+              }
+          }
+    }
+}

@@ -4,7 +4,8 @@ const touchGuiResource = (relative) => {
     return touchResourcesRoot + relative;
 }
 
-export const instructionImage = touchGuiResource('images/instructions.png');
+export const instructionImageENG = require('../stories/images/instructions_eng.png');
+export const instructionImageSWE = require('../stories/images/instructions_swe.png');
 
 export const icons = {
     Earth: touchGuiResource('icons/solarsystem/earth.png'),

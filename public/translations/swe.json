@@ -1,0 +1,39 @@
+{
+    "touchbar": {
+        "home": "Hem",
+        "help": "Hjälp",
+        "time": "Tid",
+        "info": "Info",
+        "help_image": "instructionImageSWE",
+        "select_event": "Välj händelse"
+    },
+    "slide": {
+        "button": "Tryck här för att utforska"
+    },
+    "stories": {
+          "climate_global": {
+              "title": "Jordens klimat",
+              "info": "Jorden är den tredje planeten från solen och det enda objektet i universum som är känt för att hysa liv. Enligt radiometrisk datering och andra beviskällor bildades jorden för över 4,5 miljarder år sedan.",
+              "slide": {
+                "title": "Utforska jordens klimat",
+                "info": "Utforska datavisualiseringen av vårt klimat på vår planet under de senaste åren."
+              }
+          },
+          "climate_arctic": {
+              "title": "Arktis klimat",
+              "info": "Utforska den viktiga arktiska regionen på vår planet.",
+              "slide": {
+                "title": "Utforska klimatet i Arktis",
+                "info": "Denna region är mycket viktig för vår planet."
+              }
+          },
+          "climate_polarstern": {
+              "title": "Polarsterns uppdrag under April 2020",
+              "info": "Båten som gjorde mätningarna.",
+              "slide": {
+                "title": "Polarsterns uppdrag under April 2020",
+                "info": "Följ med oss på ett uppdrag för att utforska det föränderliga klimatet i den viktiga arktiska regionen på vår planet."
+              }
+          }
+    }
+}

@@ -257,7 +257,7 @@ class OnTouchGui extends Component {
           />
         )}
         <p className={styles.storyTitle}>
-          {this.props.t(story.title)}
+          {this.props.t('stories.' + story.identifier + '.title')}
         </p>
         {(currentStory === DefaultStory)
           ? <Slider startSlider={sliderStartStory} changeStory={this.setStory} />

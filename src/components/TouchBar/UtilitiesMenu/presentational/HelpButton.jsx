@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { instructionImage } from '../../../../api/resources';
+import { instructionImageENG, instructionImageSWE } from '../../../../api/resources';
 import Icon from '../../../common/MaterialIcon/MaterialIcon';
 import SmallLabel from '../../../common/SmallLabel/SmallLabel';
 import styles from '../style/UtilitiesButtons.scss';
+import i18next from 'i18next';
 
 const HelpButton = props => {
   const [showInstructions, setShowInstructions] = useState(false);
@@ -25,8 +26,8 @@ const HelpButton = props => {
       tabIndex="0"
     >
       <Icon icon="help_outline" className={styles.Icon} />
-      { showInstructions && <img src={instructionImage} className={styles.Instructions} alt={'instructions'} />}
-      <SmallLabel>Help</SmallLabel>
+      { showInstructions && <img src={i18next.language === "swe" ? instructionImageSWE : instructionImageENG} className={styles.Instructions} alt={'instructions'} />}
+      <SmallLabel>{i18next.t('touchbar.help')}</SmallLabel>
     </div>
   );
 

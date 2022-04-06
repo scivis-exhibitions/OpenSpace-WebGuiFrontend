@@ -9,6 +9,7 @@ import Popover from '../../../common/Popover/Popover';
 import SmallLabel from '../../../common/SmallLabel/SmallLabel';
 import styles from '../style/DateController.scss';
 import buttonStyle from '../style/UtilitiesButtons.scss';
+import { withTranslation } from 'react-i18next';
 
 class DateController extends Component {
   constructor(props) {
@@ -26,7 +27,7 @@ class DateController extends Component {
     return (
       <Popover
         className={Picker.Popover}
-        title="Select event"
+        title={this.props.t('touchbar.select_event')}
         closeCallback={this.togglePopover}
       >
         <div>
@@ -83,7 +84,7 @@ class DateController extends Component {
           ${showPopover && styles.active} ${showPopover && Picker.Active}`}
         >
           <Icon icon="date_range" className={buttonStyle.Icon} />
-          <SmallLabel>Select event</SmallLabel>
+          <SmallLabel>{this.props.t('touchbar.select_event')}</SmallLabel>
         </Picker>
         { showPopover && this.popover }
       </div>
@@ -113,4 +114,4 @@ const mapStateToProps = state => ({
 
 DateController = connect(mapStateToProps)(DateController);
 
-export default DateController;
+export default withTranslation()(DateController);

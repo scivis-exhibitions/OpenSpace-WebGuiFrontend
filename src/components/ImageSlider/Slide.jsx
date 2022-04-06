@@ -23,12 +23,12 @@ class Slide extends Component {
       <div className={styles.Container}>
         <img src={image} className={styles.Slide} alt={'Story'} />
         <div className={styles.StoryInfo}>
-          <CenteredLabel className={styles.StoryName}>{this.props.t(storyInfo.title)}</CenteredLabel>
-          <CenteredLabel className={styles.Description}>{this.props.t(storyInfo.info)}</CenteredLabel>
+          <CenteredLabel className={styles.StoryName}>{this.props.t('stories.' + storyInfo.identifier + '.slide.title')}</CenteredLabel>
+          <CenteredLabel className={styles.Description}>{this.props.t('stories.' + storyInfo.identifier + '.slide.info')}</CenteredLabel>
           <StoryButton
             pickStory={this.handleStory}
             storyIdentifier={storyInfo.identifier}
-            buttonText={this.props.t("Story_Button")}
+            buttonText={this.props.t('slide.button')}
           />
         </div>
       </div>
@@ -40,8 +40,7 @@ Slide.propTypes = {
   image: PropTypes.string.isRequired,
   onChangeStory: PropTypes.func.isRequired,
   storyInfo: PropTypes.shape({
-    title: PropTypes.string,
-    info: PropTypes.string,
+    identifier: PropTypes.string
   }).isRequired,
 };
 

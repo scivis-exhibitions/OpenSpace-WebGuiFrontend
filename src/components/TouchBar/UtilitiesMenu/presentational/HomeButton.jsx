@@ -3,6 +3,7 @@ import React from 'react';
 import Icon from '../../../common/MaterialIcon/MaterialIcon';
 import SmallLabel from '../../../common/SmallLabel/SmallLabel';
 import styles from '../style/UtilitiesButtons.scss';
+import i18next from 'i18next';
 
 const HomeButton = props => (
   <div
@@ -12,7 +13,7 @@ const HomeButton = props => (
     tabIndex="0"
   >
     <Icon icon="home" className={styles.Icon} />
-    <SmallLabel>Home</SmallLabel>
+    <SmallLabel>{i18next.t('touchbar.home')}</SmallLabel>
   </div>
 );
 

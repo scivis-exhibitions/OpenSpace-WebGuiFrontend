@@ -4,6 +4,7 @@ import * as timeHelpers from '../../../../utils/timeHelpers';
 import Button from '../../../common/Input/Button/Button';
 import ScaleInput from '../../../common/Input/ScaleInput/ScaleInput';
 import styles from '../style/TimeController.scss';
+import { withTranslation } from 'react-i18next';
 
 class TimeController extends Component {
   constructor(props) {
@@ -104,4 +105,4 @@ class TimeController extends Component {
   }
 }
 
-export default TimeController;
+export default withTranslation()(TimeController);

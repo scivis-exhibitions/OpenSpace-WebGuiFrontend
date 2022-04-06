@@ -1,18 +1,12 @@
 {
   "stories": [
       {
-          "title": "Story_Climate_Global_Title",
-          "info": "Story_Climate_Global_Info",
           "identifier": "climate_global"
       },
       {
-          "title": "Story_Climate_Arctic_Title",
-          "info": "Story_Climate_Arctic_Info",
           "identifier": "climate_arctic"
       },
       {
-          "title": "Story_Climate_Polarstern_Title",
-          "info": "Story_Climate_Polarstern_Info",
           "identifier": "climate_polarstern"
       }
     ]

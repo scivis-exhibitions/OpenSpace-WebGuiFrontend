@@ -1,7 +1,5 @@
 {
   "identifier":"climate_global",
-  "title": "Story_Climate_Global_StoryTitle",
-  "storyinfo": "Story_Climate_Global_StoryInfo",
   "overviewlimit": 1.0e+8,
   "timecontroller": true,
   "datecontroller":  [],

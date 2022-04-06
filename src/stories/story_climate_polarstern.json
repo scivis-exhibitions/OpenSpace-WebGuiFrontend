@@ -1,7 +1,5 @@
 {
   "identifier":"climate_polarstern",
-  "title": "Story_Climate_Polarstern_StoryTitle",
-  "storyinfo": "Story_Climate_Polarstern_StoryInfo",
   "overviewlimit": 1.0e+8,
   "timecontroller": true,
   "datecontroller":  [

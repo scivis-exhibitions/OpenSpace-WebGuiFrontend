@@ -16,7 +16,7 @@ class LanguageButton extends Component {
   }
 
   get icon() {
-    if(this.state.language === 'en') {
+    if(this.state.language === 'eng') {
         const icon = icons["SweFlag"];
         if (icon) {
           return <img src={icon} className={styles.iconImage} />;
@@ -33,13 +33,13 @@ class LanguageButton extends Component {
   }
 
   select() {
-    if(this.state.language === 'sv') {
-        i18n.changeLanguage('en');
-        this.state.language = 'en';
+    if(this.state.language === 'swe') {
+        i18n.changeLanguage('eng');
+        this.state.language = 'eng';
     }
     else {
-        i18n.changeLanguage('sv');
-        this.state.language = 'sv';
+        i18n.changeLanguage('swe');
+        this.state.language = 'swe';
     }
   }
 

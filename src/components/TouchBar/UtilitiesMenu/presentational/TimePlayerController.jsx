@@ -9,6 +9,7 @@ import Icon from '../../../common/MaterialIcon/MaterialIcon';
 import SmallLabel from '../../../common/SmallLabel/SmallLabel';
 import styles from '../style/TimeController.scss';
 import buttonStyles from '../style/UtilitiesButtons.scss';
+import { withTranslation } from 'react-i18next';
 
 const FastSpeed = 864000;
 const Speed = 3600;
@@ -96,7 +97,7 @@ class TimePlayerController extends Component {
             tabIndex="0"
           >
             <Icon icon="replay" className={buttonStyles.Icon} />
-            <SmallLabel>Time</SmallLabel>
+            <SmallLabel>{this.props.t('touchbar.time')}</SmallLabel>
           </div>
         </div>
         <div className={styles.SimulationIncrement}>
@@ -160,4 +161,4 @@ const mapDispatchToProps = (dispatch) => {
 
 TimePlayerController = connect(mapStateToProps, mapDispatchToProps)(TimePlayerController);
 
-export default TimePlayerController;
+export default withTranslation()(TimePlayerController);
