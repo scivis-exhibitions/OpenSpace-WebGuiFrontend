@@ -110,23 +110,6 @@ class OnTouchGui extends Component {
         changePropertyValue(node.description.Identifier, 1);
       });
     }
-    // If the previous story toggled bool properties reset them to default value
-    if (story.toggleboolproperties) {
-      story.toggleboolproperties.forEach((property) => {
-        const defaultValue = property.defaultvalue ? true : false;
-        if (property.isAction) {
-          if (defaultValue) {
-            this.props.triggerActionDispatcher(property.actionEnabled);
-          }
-          else {
-            this.props.triggerActionDispatcher(property.actionDisabled);
-          }
-        }
-        else {
-          this.props.changePropertyValue(property.URI, defaultValue);
-        }
-      });
-    }
   }
 
   checkVersion() {

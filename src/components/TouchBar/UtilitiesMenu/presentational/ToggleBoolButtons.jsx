@@ -11,7 +11,6 @@ class ToggleBoolButtons extends Component {
     this.toggleButtons = [];
     
     this.languageUpdate = this.languageUpdate.bind(this);
-    //i18next.on('languageChanged', this.languageChanged);
   }
  
   handleGroup(clickedProperty) {

@@ -2,13 +2,96 @@
     "touchbar": {
         "home": "Hem",
         "help": "Hjälp",
-        "time": "Tid",
+        "time": "Nutid",
         "info": "Info",
         "help_image": "instructionImageSWE",
-        "select_event": "Välj händelse"
+        "select_event": "Välj tid"
     },
     "slide": {
         "button": "Tryck här för att utforska"
+    },
+    "datecontroller": {
+        "climate_global": {
+            "Summer_2015": {
+                "info": "Sommaren 2015"
+            },
+            "Winter_2015": {
+                "info": "Vintern 2015"
+            },
+            "Summer_2016": {
+                "info": "Sommaren 2016"
+            },
+            "Winter_2016": {
+                "info": "Vintern 2016"
+            },
+            "Summer_2017": {
+                "info": "Sommaren 2017"
+            },
+            "Winter_2017": {
+                "info": "Vintern 2017"
+            },
+            "Summer_2018": {
+                "info": "Sommaren 2018"
+            },
+            "Winter_2018": {
+                "info": "Vintern 2018"
+            },
+            "Summer_2019": {
+                "info": "Sommaren 2019"
+            },
+            "Winter_2019": {
+                "info": "Vintern 2019"
+            },
+            "Summer_2020": {
+                "info": "Sommaren 2020"
+            },
+            "Winter_2020": {
+                "info": "Vintern 2020"
+            }
+        },
+        "climate_arctic": {
+            "Winter_2010": {
+                "info": "Vintern 2010"
+            },
+            "Winter_2011": {
+                "info": "Vintern 2011"
+            },
+            "Winter_2012": {
+                "info": "Vintern 2012"
+            },
+            "Winter_2013": {
+                "info": "Vintern 2013"
+            },
+            "Winter_2014": {
+                "info": "Vintern 2014"
+            },
+            "Winter_2015": {
+                "info": "Vintern 2015"
+            },
+            "Winter_2016": {
+                "info": "Vintern 2016"
+            },
+            "Winter_2017": {
+                "info": "Vintern 2017"
+            },
+            "Winter_2018": {
+                "info": "Vintern 2018"
+            },
+            "Winter_2019": {
+                "info": "Vintern 2019"
+            },
+            "Winter_2020": {
+                "info": "Vintern 2020"
+            }
+        },
+        "climate_polarstern": {
+            "MISSION_1": {
+                "info": "1:a simuleringen (fram till 16 april)"
+            },
+            "MISSION_2": {
+                "info": "2:a simuleringen (fram till 19 april)"
+            }
+        }
     },
     "toggleboolproperties": {
         "ESRI_VIIRS": {

@@ -5,6 +5,7 @@ import Icon from '../../../common/MaterialIcon/MaterialIcon';
 import Popover from '../../../common/Popover/Popover';
 import SmallLabel from '../../../common/SmallLabel/SmallLabel';
 import buttonStyle from '../style/UtilitiesButtons.scss';
+import { withTranslation } from 'react-i18next';
 
 class InfoButton extends Component {
   constructor(props) {
@@ -57,4 +58,4 @@ InfoButton.propTypes = {
   storyInfo: PropTypes.string.isRequired,
 };
 
-export default InfoButton;
+export default withTranslation()(InfoButton);

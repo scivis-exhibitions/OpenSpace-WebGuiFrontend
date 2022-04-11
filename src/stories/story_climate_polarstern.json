@@ -1,36 +1,31 @@
 {
   "identifier":"climate_polarstern",
   "overviewlimit": 1.0e+8,
-  "timecontroller": true,
+  "timecontroller": {
+      "speed": 1800,
+      "fastspeed": 0
+  },
   "datecontroller":  [
     {
-      "info": "Start of mission",
-      "date": "2020-04-10T15:00:00.00",
+      "info": "MISSION_1",
+      "date": "2020-04-12T00:05:00.00",
       "planet": "Earth",
-      "location": {
-        "latitude": 24.555059,
-        "longitude": -81.779984,
-        "altitude": 10000000
-      }
+      "location": {}
     },
     {
-      "info": "End of mission",
-      "date": "2020-04-20T15:00:00.00",
+      "info": "MISSION_2",
+      "date": "2020-04-14T12:05:00.00",
       "planet": "Earth",
-      "location": {
-        "latitude": 24.555059,
-        "longitude": -81.779984,
-        "altitude": 10000000
-      }
+      "location": {}
     }
   ],
   "start": {
     "planet": "Earth",
-    "date": "2020-04-10T15:00:00.00",
+    "date": "2020-04-12T00:05:00.00",
     "location": {
-      "latitude": 40.758701,
-      "longitude": -111.876183,
-      "altitude": 20000000
+      "latitude": 90.0,
+      "longitude": -10.0,
+      "altitude": 12500000
     }
   },
   "toggleboolproperties": [
@@ -41,7 +36,7 @@
       "group":"Data",
       "actionEnabled":"temperature_columns_true",
       "actionDisabled":"temperature_columns_false",
-      "defaultvalue": false
+      "defaultvalue": true
     },
     {
       "URI":"total_column_water",
@@ -59,7 +54,7 @@
       "isMultiLang": true,
       "actionEnabled":"balloon_20200416_true",
       "actionDisabled":"balloon_20200416_false",
-      "defaultvalue": false
+      "defaultvalue": true
     },
     {
       "URI":"balloon_20200419",

@@ -38,7 +38,7 @@ class DateController extends Component {
   }
 
   get dateButtons() {
-    const { dateList } = this.props;
+    const { dateList, storyIdentifier } = this.props;
     timeHelpers.sortDates(dateList);
     return (dateList.map(date => (
       <Button
@@ -53,7 +53,7 @@ class DateController extends Component {
           {new Date(date.date).toLocaleDateString('en-US', { year: 'numeric', month: 'numeric', day: 'numeric' })}
         </span>
         <SmallLabel className={styles.label} id={date.date}>
-          {`${date.planet},${date.info}`}
+          {this.props.t('datecontroller.' + storyIdentifier + '.' + date.info + '.info')}
         </SmallLabel>
       </Button>
     ))
@@ -61,7 +61,7 @@ class DateController extends Component {
   }
 
   pickDate(e) {
-    const { dateList, luaApi, onChangeSight } = this.props;
+    const { dateList, luaApi, onChangeSight, storyIdentifier } = this.props;
     this.togglePopover();
     const timeString = timeHelpers.DateStringWithTimeZone(e.target.id);
     timeHelpers.setDate(luaApi, new Date(timeString));
@@ -94,6 +94,7 @@ class DateController extends Component {
 
 DateController.propTypes = {
   onChangeSight: PropTypes.func,
+  storyIdentifier: PropTypes.string,
   dateList: PropTypes.arrayOf(
     PropTypes.shape({
       place: PropTypes.string,

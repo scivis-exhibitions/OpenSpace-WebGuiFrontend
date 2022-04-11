@@ -76,7 +76,10 @@ class Controllers extends Component {
       <div className={`${styles.Controllers}`}>
       <section className={styles.Grid__Left}>
         { (story && story.timecontroller) && (
-          <TimePlayerController />
+          <TimePlayerController 
+            Speed={story.timecontroller.speed !== undefined ? Number(story.timecontroller.speed) : 3600}
+            FastSpeed={story.timecontroller.fastspeed !== undefined ? Number(story.timecontroller.fastspeed) : 86400}
+          />
         )}
       </section>
       <section className={styles.Grid__Left}>
@@ -84,6 +87,7 @@ class Controllers extends Component {
           <DateController
             dateList={story.datecontroller}
             onChangeSight={this.onChangeSight}
+            storyIdentifier={story.identifier}
           />
         )}
       </section>

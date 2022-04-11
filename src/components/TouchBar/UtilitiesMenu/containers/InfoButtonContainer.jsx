@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import InfoButton from './../presentational/InfoButton';
 import buttonStyle from '../style/UtilitiesButtons.scss';
+import { withTranslation } from 'react-i18next';
 
 class InfoButtonController extends Component {
   constructor(props) {
@@ -14,14 +15,13 @@ class InfoButtonController extends Component {
   }
 
   render() {
+    const { story } = this.props;
     return (
       <div className={`${buttonStyle.UtilitiesButton}`}>
-        {this.props.story.title &&
           <InfoButton
-            storyTitle={this.props.story.title}
-            storyInfo={this.props.story.storyinfo}
+            storyTitle={this.props.t('stories.' + story.identifier + '.title')}
+            storyInfo={this.props.t('stories.' + story.identifier + '.info')}
           />
-        }
       </div>
     );
   }
@@ -36,14 +36,11 @@ InfoButtonController = connect(
 )(InfoButtonController);
 
 InfoButtonController.propTypes = {
-  story: PropTypes.objectOf(PropTypes.shape({
-    storyTitle: PropTypes.string,
-    storyInfo: PropTypes.string,
-  })),
+  story: PropTypes.objectOf(PropTypes.shape({})),
 };
 
 InfoButtonController.defaultProps = {
   story: {},
 };
 
-export default InfoButtonController;
+export default withTranslation()(InfoButtonController);

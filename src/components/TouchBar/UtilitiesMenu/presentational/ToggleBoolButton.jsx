@@ -29,12 +29,34 @@ class ToggleBoolButton extends Component {
     if (!property.isAction) {
       boolPropertyDispatcher.subscribe();
     }
+    const { checked } = this.state;
+    if (checked) {
+        if (property.isAction) {
+            if (property.isMultiLang) {
+                this.props.triggerActionDispatcher(property.actionEnabled + '_' + i18next.language);
+            }
+            else {
+                this.props.triggerActionDispatcher(property.actionEnabled);
+            }
+        }
+        else {
+            this.props.boolPropertyDispatcher.set(true);
+        }
+    }
   }
 
   componentWillUnmount() {
     const { boolPropertyDispatcher, property } = this.props;
     if (!property.isAction) {
       boolPropertyDispatcher.unsubscribe();
+    }
+    const { checked } = this.state;
+    if (checked) {
+        if (property.isAction) {
+            this.props.triggerActionDispatcher(property.actionDisabled);
+        } else {
+            boolPropertyDispatcher.set(false);
+        }
     }
   }
 
@@ -53,13 +75,6 @@ class ToggleBoolButton extends Component {
   
   languageChanged(lng) {
     this.props.languageUpdate(this.props);
-    /*const { boolPropertyDispatcher, property } = this.props;
-    const { checked } = this.state;
-    if (checked) {
-        if(property.isMultiLang) {
-            this.props.triggerActionDispatcher(property.actionEnabled + '_' + i18next.language);
-        }
-    }*/
   }
   
   updateMultiLang() {
